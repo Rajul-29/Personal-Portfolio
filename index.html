@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rajul - Developer Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <style>
         * {
@@ -32,12 +34,6 @@
             list-style: none;
             margin: 0 22px;            
         }
-        main hr{
-            border: 0;
-            background: blue;
-            height: 1.2px;
-            margin: 40px 80px;
-        }
         nav ul li a{
             text-decoration: none;
             color: white;            
@@ -60,9 +56,26 @@
         }
         .rightSection img{
             width: 80%;
+            border-radius: 50%;
+            height: auto;
         }
         .leftSection{
             font-size: 2.5rem;
+        }
+        .secondSection{
+            display:flex;
+            /* justify-content: space-around; */
+            align-items: center;
+            margin: 170px 0;
+        }
+        .rightSectionEducation img{
+            font-size: 2.5rem;
+        }
+        .leftSectionEducation{
+            margin-left: 60px;
+            width: 10%;
+            border-radius: 50%;
+            height: auto;
         }
         .purple{
             color: rgb(140, 56, 161);
@@ -70,13 +83,10 @@
         #element{
             color: rgb(140, 56, 161);
         }
-        .secondSection{
-            max-width: 80vw;
-            margin: auto;
-        }
-        .secondSection > h1{
-            font-size: 2.5rem;
-            font: sans-serif;
+        .icons{
+            width: 7%;
+            border-radius: 50%;
+            height: auto;
         }
     </style>
 </head>
@@ -103,13 +113,36 @@
                 <span id="element"></span>
             </div>
             <div class="rightSection">
-                <img src="dev.png" alt="">
+                <img src="me.jpeg" class="img-rounded" border="3px" alt="Developer's Photo">
             </div>
         </section>
-        <hr>
+        <h1 style="margin: 75px ">Education</h1>
         <section class="secondSection">
-            <h1>Education</h1>
-
+            <div class="leftSectionEducation">
+                <img src="DTU.jpg" class="img-rounded" alt="" style="width:125px;height:125px;">
+            </div>
+            <div class="rightSectionEducation">
+                <h2>Delhi Technological University (Formerly DCE)</h2>
+                <h4>Bachelor of Technology - BTech</h4>
+                <h6>2022-2026</h6>
+                <ul>
+                    <li>CGPA: 8.97</li>
+                    <li>Corporate Head at Yuvaan</li>
+                </ul>
+            </div>
+        </section>
+        <section class="secondSection">
+            <div class="leftSectionEducation">
+                <img src="OPG.jpeg" class="img-rounded" alt="" style="width:125px;height:125px;">
+            </div>
+            <div class="rightSectionEducation">
+                <h2>OPG World School</h2>
+                <h4>Central Board of Secondary Education</h4>
+                <ul>
+                    <li>Class XII : 86%</li>
+                    <li>Class X   : 94%</li>
+                </ul>
+            </div>
         </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

@@ -133,12 +133,45 @@
             position: absolute;
             top: 100%;
             right: 0;
-            background-color: white;
+            background-color: rgb(0, 0, 33);
             width: fit-content;
             max-height: 0;
             overflow: hidden;
             transition: all 0.3 ease-in-out;
-        }        
+        }
+        .menu-links a {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.5rem;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            transition: all 0.3 ease-in-out;
+        }
+        .menu-links li {
+            list-style: none;
+        }
+        .menu-links.open {
+            max-height: 300px;  
+        }
+        .hamburger-icon.open span:first-child {
+            transform: rotate(45deg) translate(10px, 5px);
+        }
+        .hamburger-icon.open span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-icon.open span:last-child {
+            transform: rotate(-45deg) translate(10px, -5px);
+        }
+        .hamburger-icon span:first-child {
+            transform: none;
+        }
+        .hamburger-icon span:first-child {
+            opacity: 1;
+        }
+        .hamburger-icon span:first-child {
+            transform: none;
+        }
     </style>
     <link rel="stylesheet" href="mediaqueries.css" /> 
 </head>
@@ -238,6 +271,7 @@
 
         </div>
     </main>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
      <!-- Setup and start animation! -->
     <script>

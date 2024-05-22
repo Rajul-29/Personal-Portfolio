@@ -97,18 +97,9 @@
       #element {
         color: rgb(169, 155, 231);
       }
-      .icons {
-        width: 7%;
-        border-radius: 50%;
-        height: auto;
-      }
       .thirdSection > img {
         height: 7rem;
         margin: 4rem;
-      }
-      .icons {
-        height: 50px;
-        margin: 40px;
       }
       .skills-svg {
         cursor: pointer;
@@ -189,7 +180,7 @@
       }
       .icon {
         cursor: pointer;
-        height: 2.5rem;
+        height: 2.2rem;
         border-radius: 50%;
       }
       .btn-container{
@@ -197,17 +188,60 @@
       }
       .btn-color-1 {
         font-weight: 750;
-        font-size: 1.4rem;
+        font-size: 1.25rem;
         transition: all 300ms ease;
-        width: 30%;
+        width: 29%;
         height: 4rem;
-        border-radius: 1.5rem;
+        border-radius: 4rem;
         border: rgb(0, 0, 0) 0.1rem solid;
       }
       .btn-color-1:hover{
         cursor: pointer;
         background: rgb(0, 0, 0);
         color: white;        
+      }
+      .section_text_p1 {
+        text-align: center;
+        font-size: 1.5rem;
+      }.title_cm{
+        font-size: 3rem;
+        text-align: center;
+      }
+      #contact{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 70vh;
+      }
+      .contact-up{
+        display: flex;
+        justify-content: center;
+        border-radius: 2rem;
+        border: rgb(0, 0, 0) 0.15rem solid;
+        border-color: rgb(138, 206, 233);
+        margin: 2rem auto;
+        padding: 0.5rem;
+      }
+      .contact-up a{
+        color: aliceblue;
+        text-decoration: none;
+      }
+      .contact-up a:hover{
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+      }
+      .contact-info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 1rem;
+      }
+      .contact-info p{
+        font-size: larger;
+      }
+      .contact_icon{
+        cursor: default;
       }
     </style>
     <link rel="stylesheet" href="mediaqueries.css" />
@@ -354,18 +388,23 @@
         
       </section>
       <hr />
-      <h1 id="contact" style="margin: 72px">Contact Me</h1>
-      <div class="social-media">
-        <a
-          href="https://www.linkedin.com/in/rajul-chaudhary-882a72261/"
-          target="_blank"
-        >
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
-            class="icons"
-          />
-        </a>
-      </div>
+      <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title_cm">Contact Me</h1>
+        <div class="contact-up">
+          <div class="contact-info">
+            <img src="gmail-svg.svg" alt="gmail" class="icon contact_icon">
+            <p><a href="mailto:rajulchaudhary2@gmail.com" target="_blank">rajulchaudhary2@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-up">
+          <div class="contact-info">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="linkedin" class="icon contact_icon">
+            <p><a href="https://www.linkedin.com/in/rajul-chaudhary-882a72261/" target="_blank">My Linkedin Profile</a></p>
+          </div>
+        </div>
+      </section>
+      
     </main>
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

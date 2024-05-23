@@ -198,7 +198,7 @@
      width: 100%;
    }
    .firstSection img{
-    margin-left: 6.5rem;
+    margin-left: 6.3rem;
     margin-bottom: -2rem;
    }
    .leftSection{
@@ -211,7 +211,8 @@
     width: 47%;
     font-size: 0.69rem;
     font-weight: 750;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 19, 19);
    }
    
    .leftSectionEducation {

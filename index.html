@@ -66,7 +66,7 @@
         align-items: center;
         margin: 170px 0;
       }
-      
+
       .rightSection img {
         margin-left: 5rem;
         width: 47%;
@@ -176,14 +176,17 @@
         width: 30%;
         justify-content: center;
         margin-top: 1rem;
-        gap: 1.2rem; 
+        gap: 1.2rem;
+      }
+      #socials-container img:hover{
+        padding: 0.25rem;
       }
       .icon {
         cursor: pointer;
         height: 2.2rem;
         border-radius: 50%;
       }
-      .btn-container{
+      .btn-container {
         display: flex;
       }
       .btn-color-1 {
@@ -195,25 +198,26 @@
         border-radius: 4rem;
         border: rgb(0, 0, 0) 0.1rem solid;
       }
-      .btn-color-1:hover{
+      .btn-color-1:hover {
         cursor: pointer;
         background: rgb(0, 0, 0);
-        color: white;        
+        color: white;
       }
       .section_text_p1 {
         text-align: center;
         font-size: 1.5rem;
-      }.title_cm{
+      }
+      .title_cm {
         font-size: 3rem;
         text-align: center;
       }
-      #contact{
+      #contact {
         display: flex;
         justify-content: center;
         flex-direction: column;
         height: 70vh;
       }
-      .contact-up{
+      .contact-up {
         display: flex;
         justify-content: center;
         border-radius: 2rem;
@@ -222,28 +226,33 @@
         margin: 2rem auto;
         padding: 0.5rem;
       }
-      .contact-up a{
+      .contact-up a {
         color: aliceblue;
         text-decoration: none;
       }
-      .contact-up a:hover{
+      .contact-up a:hover {
         text-decoration: underline;
         text-underline-offset: 1rem;
       }
-      .contact-info{
+      .contact-info {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
         margin: 1rem;
       }
-      .contact-info p{
+      .contact-info p {
         font-size: larger;
       }
-      .contact_icon{
+      .contact_icon {
         cursor: default;
       }
-      
+      .linkedin-svg:hover{
+        background-color: rgb(117, 146, 207);
+      }
+      .github-svg:hover{
+        background-color: rgb(201, 191, 191);
+      }
     </style>
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -285,7 +294,7 @@
           <div>I am a passionate</div>
           <span id="element"></span>
           <div class="btn-container">
-            <button class="btn-color-1" onclick="window.open('Rajul_CV.pdf')">
+            <button class="btn-color-1" onclick="window.open('RAJUL_CV.pdf')">
               Download CV
             </button>
           </div>
@@ -293,13 +302,13 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
               alt="My Linkedin Profile"
-              class="icon"
+              class="icon linkedin-svg"
               onclick="openInNewTab('https://www.linkedin.com/in/rajul-chaudhary-882a72261/')"
             />
             <img
-            src="github.svg"
+              src="github.svg"
               alt="My Github Profile"
-              class="icon"
+              class="icon github-svg"
               onclick="openInNewTab('https://github.com/Rajul-29')"
             />
           </div>
@@ -323,7 +332,7 @@
             src="DTU.jpg"
             class="img-rounded"
             alt="College Logo"
-            style="width: 8rem; height: 8rem;"
+            style="width: 8rem; height: 8rem"
           />
         </div>
         <div class="rightSectionEducation">
@@ -332,7 +341,7 @@
           <h6>2022-2026</h6>
           <ul>
             <li>CGPA: 8.97</li>
-            <li>Corporate Head at Yuvaan</li>
+            <li>Corporate Coordinator at Yuvaan DTU</li>
           </ul>
         </div>
       </section>
@@ -342,7 +351,7 @@
             src="OPG.jpeg"
             class="img-rounded"
             alt="School Logo"
-            style="width: 8rem; height: 8rem;"
+            style="width: 8rem; height: 8rem"
           />
         </div>
         <div class="rightSectionEducation">
@@ -378,15 +387,13 @@
         />
         <img src="github.svg" class="skills-svg" />
         <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
           class="skills-svg"
         />
         <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
           class="skills-svg"
         />
-
-        
       </section>
       <hr />
       <section id="contact">
@@ -394,14 +401,28 @@
         <h1 class="title_cm">Contact Me</h1>
         <div class="contact-up">
           <div class="contact-info">
-            <img src="gmail-svg.svg" alt="gmail" class="icon contact_icon">
-            <p><a href="mailto:rajulchaudhary2@gmail.com" target="_blank">rajulchaudhary2@gmail.com</a></p>
+            <img src="gmail-svg.svg" alt="gmail" class="icon contact_icon" />
+            <p>
+              <a href="mailto:rajulchaudhary2@gmail.com" target="_blank"
+                >rajulchaudhary2@gmail.com</a
+              >
+            </p>
           </div>
         </div>
         <div class="contact-up">
           <div class="contact-info">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="linkedin" class="icon contact_icon">
-            <p><a href="https://www.linkedin.com/in/rajul-chaudhary-882a72261/" target="_blank">My Linkedin Profile</a></p>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+              alt="linkedin"
+              class="icon contact_icon"
+            />
+            <p>
+              <a
+                href="https://www.linkedin.com/in/rajul-chaudhary-882a72261/"
+                target="_blank"
+                >My Linkedin Profile</a
+              >
+            </p>
           </div>
         </div>
       </section>
@@ -417,7 +438,6 @@
           </div>
         </nav>
       </footer>
-      
     </main>
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

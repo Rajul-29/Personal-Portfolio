@@ -97,13 +97,6 @@
       #element {
         color: rgb(169, 155, 231);
       }
-      .thirdSection > img {
-        height: 7rem;
-        margin: 4rem;
-      }
-      .skills-svg {
-        cursor: pointer;
-      }
       .left:hover {
         cursor: default;
       }
@@ -250,11 +243,40 @@
         cursor: default;
       }
       .linkedin-svg:hover{
-        background-color: rgb(117, 146, 207);
+        background-color: rgb(153, 180, 240);
       }
       .github-svg:hover{
         background-color: rgb(201, 191, 191);
       }
+      .thirdSection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center ;
+      }
+      .card{
+        background-color: rgb(0, 0, 0);
+        width: 27%;
+        color: white;
+        border-radius: 5%;
+        margin: 2rem;
+        font-weight: 600;
+      }
+      .card p{
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      .card img{
+        padding: 0.2rem;
+      }
+      .thirdSection div:hover{
+        cursor: pointer;
+        background-color: rgb(20, 21, 22);
+        text-decoration: underline;
+        text-underline-offset: 0.4rem;
+      }
+      
     </style>
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -368,34 +390,42 @@
       <hr />
       <h1 id="skills" style="margin: 72px">Skills</h1>
       <section class="thirdSection">
-        <img
+        <div class="card">
+          <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg"
-          class="skills-svg"
         />
-
-        <img
+        <p>HTML</p>
+        </div>
+        <div class="card">
+          <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg"
-          class="skills-svg"
         />
-
-        <img
+        <p>CSS</p>
+        </div>
+        <div class="card">
+          <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
-          class="skills-svg"
         />
-
-        <img
+        <p>JAVASCRIPT</p>
+        </div>
+        <div class="card">
+          <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg"
-          class="skills-svg"
         />
-        <img src="github.svg" class="skills-svg" />
-        <img
+        <p>GIT</p>
+        </div>
+        <div class="card">
+          <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
-          class="skills-svg"
         />
-        <img
+        <p>REACTJS</p>
+        </div>
+        <div class="card">
+          <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
-          class="skills-svg"
         />
+        <p>NODEJS</p>
+        </div>
       </section>
       <hr />
       <section id="contact">
